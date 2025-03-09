@@ -1,0 +1,92 @@
+# Reading pref.tcl
+# do car_start_check_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying E:/modelsimfiles/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/modelsimfiles {/modelsimfiles/car_start_check.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:21:38 on Apr 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/modelsimfiles" E:/modelsimfiles/car_start_check.v 
+# -- Compiling module car_start_check
+# -- Compiling module a
+# -- Compiling module comparator
+# -- Compiling module d
+# -- Compiling module e
+# -- Compiling module equal_comparator
+# -- Compiling module full_adder_carry
+# -- Compiling module lessthan_comparator
+# -- Compiling module digi_lock
+# -- Compiling module r
+# -- Compiling module xnor_gate
+# -- Compiling module y
+# -- Compiling module rain_sensor
+# -- Compiling module headlight_adjustment
+# -- Compiling module ride_height_adjustment
+# -- Compiling module multiplyer_eight
+# -- Compiling module xor_gate
+# -- Compiling module fa
+# -- Compiling module and_gate
+# 
+# Top level modules:
+# 	car_start_check
+# End time: 08:21:39 on Apr 30,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/modelsimfiles {E://modelsimfiles/car_start_check_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 08:21:39 on Apr 30,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/modelsimfiles" E://modelsimfiles/car_start_check_tb.v 
+# -- Compiling module car_start_check_tb
+# 
+# Top level modules:
+# 	car_start_check_tb
+# End time: 08:21:39 on Apr 30,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs="+acc"  car_start_check_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L fiftyfivenm_ver -L rtl_work -L work -voptargs=""+acc"" car_start_check_tb 
+# Start time: 08:21:39 on Apr 30,2024
+# Loading work.car_start_check_tb
+# Loading work.car_start_check
+# Loading work.multiplyer_eight
+# Loading work.and_gate
+# Loading work.fa
+# Loading work.xor_gate
+# Loading work.rain_sensor
+# Loading work.headlight_adjustment
+# Loading work.ride_height_adjustment
+# Loading work.comparator
+# Loading work.equal_comparator
+# Loading work.xnor_gate
+# Loading work.lessthan_comparator
+# Loading work.full_adder_carry
+# Loading work.digi_lock
+# Loading work.r
+# Loading work.e
+# Loading work.a
+# Loading work.d
+# Loading work.y
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# pin= 1816,engineoil=  530,batteryvoltage=   53,oilpressure=  101,fuellevel=   10,waterlevel=  450,tyrepressure=  100,seatbelt=1,airbag=1,enginetemp=  168,rain_sensor_auto=1,rain_level=3,headlight=110,drivemode=1000,war_engineoil=0,war_batteryvoltage=0,war_oilpressure=0,war_fuellevel=0,war_waterlevel=0,war_tyrepressure=0,war_seatbelt=0,war_airbag=0,war_enginetemp=0,key=0,readytogo=0,rs=0000000000,es=0000000000,as=0000000000,ds=0000000000,ys=0000000000,wiperspeed=0,foglight=0,lowbeam=0,highbeam=0,height= 0,expectedrang=    0
+# pin= 9999,engineoil=  530,batteryvoltage=   53,oilpressure=  101,fuellevel=   10,waterlevel=  450,tyrepressure=  100,seatbelt=1,airbag=1,enginetemp=  168,rain_sensor_auto=1,rain_level=2,headlight=110,drivemode=0100,war_engineoil=0,war_batteryvoltage=0,war_oilpressure=0,war_fuellevel=0,war_waterlevel=0,war_tyrepressure=0,war_seatbelt=0,war_airbag=0,war_enginetemp=0,key=1,readytogo=1,rs=0110110001,es=0010100111,as=0010111011,ds=0000111111,ys=1001010000,wiperspeed=2,foglight=1,lowbeam=1,highbeam=0,height= 5,expectedrang=  290
+# pin= 2679,engineoil=  513,batteryvoltage=   13,oilpressure= 1981,fuellevel=  165,waterlevel=   10,tyrepressure=   65,seatbelt=1,airbag=1,enginetemp=  210,rain_sensor_auto=0,rain_level=0,headlight=100,drivemode=0100,war_engineoil=0,war_batteryvoltage=0,war_oilpressure=0,war_fuellevel=0,war_waterlevel=0,war_tyrepressure=0,war_seatbelt=0,war_airbag=0,war_enginetemp=0,key=0,readytogo=0,rs=0000000000,es=0000000000,as=0000000000,ds=0000000000,ys=0000000000,wiperspeed=0,foglight=0,lowbeam=0,highbeam=0,height= 0,expectedrang=    0
+# pin= 9999,engineoil=  519,batteryvoltage=   25,oilpressure=   10,fuellevel=    0,waterlevel=   60,tyrepressure=   10,seatbelt=1,airbag=1,enginetemp= 1000,rain_sensor_auto=1,rain_level=1,headlight=100,drivemode=0010,war_engineoil=1,war_batteryvoltage=1,war_oilpressure=1,war_fuellevel=1,war_waterlevel=1,war_tyrepressure=1,war_seatbelt=0,war_airbag=0,war_enginetemp=1,key=1,readytogo=0,rs=0000000000,es=0000000000,as=0000000000,ds=0000000000,ys=0000000000,wiperspeed=1,foglight=1,lowbeam=0,highbeam=0,height= 0,expectedrang=    0
+# pin= 9999,engineoil=  520,batteryvoltage=   50,oilpressure=  100,fuellevel=    1,waterlevel=  400,tyrepressure=   25,seatbelt=0,airbag=0,enginetemp= 1000,rain_sensor_auto=1,rain_level=3,headlight=010,drivemode=0001,war_engineoil=0,war_batteryvoltage=0,war_oilpressure=0,war_fuellevel=0,war_waterlevel=0,war_tyrepressure=1,war_seatbelt=1,war_airbag=1,war_enginetemp=1,key=1,readytogo=0,rs=0000000000,es=0000000000,as=0000000000,ds=0000000000,ys=0000000000,wiperspeed=3,foglight=0,lowbeam=1,highbeam=0,height= 0,expectedrang=   29
+# pin= 9999,engineoil=    1,batteryvoltage=    0,oilpressure=    1,fuellevel=    0,waterlevel=    1,tyrepressure=    1,seatbelt=1,airbag=0,enginetemp=    1,rain_sensor_auto=0,rain_level=0,headlight=101,drivemode=0100,war_engineoil=1,war_batteryvoltage=1,war_oilpressure=1,war_fuellevel=1,war_waterlevel=1,war_tyrepressure=1,war_seatbelt=0,war_airbag=1,war_enginetemp=0,key=1,readytogo=0,rs=0000000000,es=0000000000,as=0000000000,ds=0000000000,ys=0000000000,wiperspeed=0,foglight=1,lowbeam=0,highbeam=1,height= 0,expectedrang=    0
+# ** Note: $finish    : E://modelsimfiles/car_start_check_tb.v(51)
+#    Time: 180 ps  Iteration: 0  Instance: /car_start_check_tb
+# 1
+# Break in Module car_start_check_tb at E://modelsimfiles/car_start_check_tb.v line 51
